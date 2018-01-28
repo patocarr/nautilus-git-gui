@@ -6,7 +6,8 @@
 ## \date      created date: 2017-05-04T14:04+09:00
 ## \date      updated date: 2017-05-05T03:11+09:00
 
-import os, subprocess
+import os, subprocess, gi
+gi.require_version('Nautilus', '3.0')
 from gi.repository import Nautilus, GObject
 
 class NautilusGitGUI(Nautilus.MenuProvider, GObject.GObject):
