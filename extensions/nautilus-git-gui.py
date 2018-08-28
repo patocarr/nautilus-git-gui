@@ -40,4 +40,4 @@ class NautilusGitGUI(Nautilus.MenuProvider, GObject.GObject):
         subprocess.Popen(["git", "gui"], cwd=file.get_location().get_path())
 
     def _gitk_run(self, menu, file):
-        subprocess.Popen(["gitk"], cwd=file.get_location().get_path())
+        subprocess.Popen(["gitk","--all"], cwd=file.get_location().get_path())
